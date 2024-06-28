@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+     
+    }
+.signup{
+ 
+ 
+ 
+    height: 300px;
+    width: 500px;
+ 
+ 
+}
+.head{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    right: 40px;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    padding: 18px 25px;
+    color: #000000;
+    font-size:2em;
+    font-weight: 1200;
+    letter-spacing: 0.04em;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+   
+   
+ 
+}
+.form{
+    position: relative;
+    top: 20px;
+}
+.form1{
+    border: 2px solid rgb(36, 29, 29);
+    border-radius: 5px;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    font-size: 15px;
+    top: 26px;
+    left: 80px;
+    height: 30px;
+    width: 300px;
+}
+.form2{
+    border: 2px solid rgb(82, 82, 82);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 5px;
+    position: relative;
+    top: 26px;
+    left: 80px;
+    height: 30px;
+    width: 300px;
+    font-size: 15px;
+    font-weight: 400;
+   
+}
+.form3{
+    border: 2px solid rgb(35, 32, 32);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 5px;
+    position: relative;
+    top: 26px;
+    left: 80px;
+    height: 30px;
+    width: 300px;
+    font-size: 15px;
+}
+ 
+button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: #183153;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  top: 40px;
+  left: 170px;
+  height: 40px;
+}
+ 
+button:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #ffffff;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+ 
+button:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+ 
+button span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: #ffffff;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+ 
+button:hover span {
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+}
+ 
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+ 
+  50% {
+    transform: scale(0.95);
+  }
+ 
+  100% {
+    transform: scale(1);
+  }
+}
+.formc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top: 20vh;
+ 
+ 
+}
+ 
+</style>
+<body>
+ 
+<div class="formc">
+ <div class="signup">
+    <h2 class="head">Signup page</h2>
+ 
+    <form action="/signup" method="post" class="form">
+ 
+        <input placeholder="Enter  username" name="name" class="form1"/>
+        <br> <br>
+        <input placeholder="Enter your occupation" name="occupation"class="form2" />
+        <br> <br>
+        <input  placeholder="Enter your password" type="password" name="password"class="form3"/>
+        <button>
+            <span>Signup</span>
+          </button>
+    </form>
+</div>
+ 
+</div>
+   
+</body>
+</html>
